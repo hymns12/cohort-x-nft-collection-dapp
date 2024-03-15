@@ -8,6 +8,7 @@ import { useWeb3ModalAccount } from "@web3modal/ethers/react";
 const useMyNfts = () => {
     const { address } = useWeb3ModalAccount();
     const [data, setData] = useState([]);
+    const [isMintedId, ]
     const tokenIDs = useMemo(
         () => [...Array.from({ length: 30 })].map((_, index) => index),
         []
